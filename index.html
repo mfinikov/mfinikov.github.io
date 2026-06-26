@@ -66,6 +66,41 @@
     .muted {
       color: #9a9a9a;
     }
+
+    .section-title {
+      margin: 32px 0 8px 0;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .timeline {
+      list-style: none;
+      margin: 8px 0 0 0;
+      padding: 0;
+    }
+
+    .timeline li {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin: 8px 0;
+    }
+
+    .timeline li::before {
+      content: "—";
+      color: #555;
+      flex-shrink: 0;
+    }
+
+    .tl-title {
+      color: #eaeaea;
+    }
+
+    .tl-meta {
+      color: #9a9a9a;
+      font-size: 14px;
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
@@ -96,6 +131,16 @@
       <li>When I meet someone new, I try to pick something up from them,</li>
       <p>as well as give something in return, because this is what connections for</p>
       <li>When I meet someone new, I try to meet their friend to strengthen the connection</li>
+    </ul>
+
+    <p class="section-title">My Life in the Next 4 Years</p>
+    <ul class="timeline">
+      <li><span class="tl-title">Intern @ humandelta</span><span class="tl-meta">June 2026 · age 16</span></li>
+      <li><span class="tl-title">Build small drone</span><span class="tl-meta">June 2026 (parallel) · age 16</span></li>
+      <li><span class="tl-title">Part 107 exam</span><span class="tl-meta">by ~Dec 2026 · age 17</span></li>
+      <li><span class="tl-title">Finish high school</span><span class="tl-meta">June 2027 · age 17</span></li>
+      <li><span class="tl-title">Community college</span><span class="tl-meta">Sept 2027 → ~May 2029 · age 17→19</span></li>
+      <li><span class="tl-title">Transfer to UC</span><span class="tl-meta">Sept 2029 → ~May 2031 · age 19→21</span></li>
     </ul>
   </div>
 </body>
